@@ -12,7 +12,9 @@ sub-MOC once it gets crowded (e.g. an "AWS IAM MOC").
 ## IAM
 
 - [[IAM Roles]]
+- [[Policy Evaluation Logic]]
 
 ## Principles
 
 - [[Least Privilege]]
+- [[Ephemeral Credentials]]

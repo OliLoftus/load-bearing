@@ -10,7 +10,8 @@ An IAM role is an identity with permission policies attached, but no long-term
 credentials - it's assumed by a trusted principal (a user, service, or another
 account) for a temporary session, rather than logged into directly.
 
-- Assuming a role returns temporary credentials (`AssumeRole`), not a password/key.
+- Assuming a role returns temporary credentials (`AssumeRole`), not a
+  long-lived password/key - see [[Ephemeral Credentials]].
 - Who can assume the role is controlled by its **trust policy**; what the role can
   do once assumed is controlled by its **permission policies** - two separate
   documents, easy to conflate.
