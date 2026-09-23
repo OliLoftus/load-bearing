@@ -14,6 +14,10 @@ sub-MOC once it gets crowded (e.g. an "AWS IAM MOC").
 - [[IAM Roles]]
 - [[Policy Evaluation Logic]]
 
+## Compute
+
+- [[Lambda Functions]]
+
 ## Principles
 
 - [[Least Privilege]]
