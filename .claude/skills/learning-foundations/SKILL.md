@@ -2,12 +2,16 @@
 name: learning-foundations
 description: >
   Use when Oliver wants to spend a session actually learning something in this
-  vault, not just tidying notes. Scans Notes/, MOCs/, Literature/, Fleeting/ and
-  Foundations/Backlog.md for gaps - missing prerequisite concepts, MOC sections
-  with no notes yet, and underlying principles that are implied across several
-  notes but never named - then works through exactly one gap interactively
-  before writing anything. Trigger on `/learning-foundations` or phrases like
-  "what am I missing", "find gaps in my notes", "what should I learn next".
+  vault, not just tidying notes. Either scans Notes/, MOCs/, Literature/,
+  Fleeting/ and Foundations/Backlog.md for gaps - missing prerequisite
+  concepts, MOC sections with no notes yet, and underlying principles implied
+  but never named - or, if Oliver points it directly at something (a specific
+  fleeting capture, a question, a topic he names), skips straight to working
+  through that one thing. Either way, the point isn't the specific fact but
+  the underlying principle it's an instance of - that's what actually gets
+  learned and written down. Trigger on `/learning-foundations`, phrases like
+  "what am I missing", "find gaps in my notes", "what should I learn next",
+  or "help me flesh out <some note/topic>".
 metadata:
   version: "1.0"
 ---
@@ -19,6 +23,13 @@ actually learn it - not to generate content. A gap being *found* and a gap
 being *learned* are different events; only the second one produces a file.
 Never create a placeholder/stub note for a gap that hasn't actually been
 worked through.
+
+**Two ways in:** either run Step 1's scan and pick from what it finds, or
+Oliver points straight at something - a fleeting capture that's just a raw
+question (e.g. `Fleeting/Headless.md` containing only "what is headless") or a
+topic he names in chat. In the second case, skip Step 1 entirely and go
+straight to Step 2 for that one item - the interactive flow is identical
+either way, only where the topic came from differs.
 
 ## Step 1 - Scan (read-only)
 
@@ -51,10 +62,20 @@ only:
    explanation - the goal is finding out what's actually missing, not
    restating something he already has.
 2. Discuss/explain the gap, explicitly connecting it to the notes that
-   referenced it (from Step 1) and to any relevant `type: principle` notes
-   already in the vault.
-3. Keep going until Oliver can explain the concept back in his own words.
-4. Only then, help him write the note. He writes/dictates the actual content -
+   referenced it (from Step 1, if that's where it came from) and to any
+   relevant `type: principle` notes already in the vault.
+3. Explicitly ask: is there a more general principle this is an instance of,
+   not just the specific fact/service/tool itself? Do this every time, not
+   only when several existing notes already hint at the same pattern - the
+   first time Oliver meets a concept is exactly when this should be asked,
+   not after enough notes pile up to make it obvious in hindsight. If a real
+   principle emerges, that's what gets quizzed on and written up as its own
+   `type: principle` note - the specific thing becomes an example under it,
+   not the other way round. If nothing more general is genuinely there,
+   don't force one; write the specific note as `type: permanent` instead.
+4. Keep going until Oliver can explain the concept - and the principle behind
+   it, if one emerged - back in his own words.
+5. Only then, help him write the note(s). He writes/dictates the actual content -
    don't write it for him wholesale. Your job is placing it correctly:
    - Frontmatter: `type: permanent` or `type: principle` (principle if it's an
      underlying idea rather than a specific fact), `tags`, `created`.
@@ -71,8 +92,8 @@ only:
    - MOC: insert a link into the right MOC section (same logic as the
      Formatting skill's MOC-linking step) - ask Oliver if no existing section
      fits.
-5. Once the file is written, remove the corresponding line from
-   `Foundations/Backlog.md`.
+6. Once the file(s) are written, remove the corresponding line from
+   `Foundations/Backlog.md`, if it came from there.
 
 ## Step 3 - File the rest
 
