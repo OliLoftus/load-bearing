@@ -17,6 +17,6 @@ evaluated the same way as any other role via [[Policy Evaluation Logic]].
 Triggered one of three ways:
 
 - Manually (direct invoke)
-- As part of another process - API Gateway, Step Functions, or called by
-  another service
-- On a schedule, via an EventBridge rule
+- As part of another process - [[API Gateway]], [[Step Functions]], or called
+  by another service
+- On a schedule, via an [[EventBridge]] rule

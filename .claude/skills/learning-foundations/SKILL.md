@@ -63,6 +63,11 @@ only:
      referenced it, and from those notes back to this one if not already
      linked.
    - Forward links: to any deeper principle this concept itself depends on.
+   - Every other named concept mentioned in the note's body - not just the
+     ones from this discussion - becomes a `[[wikilink]]` too, whether or not
+     it has a note yet, same rule the Formatting skill uses in its Step 4.
+     Otherwise a note written here never becomes scannable by Step 1 next
+     time - a plain-text mention is invisible to it, only real wikilinks are.
    - MOC: insert a link into the right MOC section (same logic as the
      Formatting skill's MOC-linking step) - ask Oliver if no existing section
      fits.
