@@ -71,9 +71,18 @@ only:
 2. Ask what he already knows or assumes about it first. Don't launch into an
    explanation - the goal is finding out what's actually missing, not
    restating something he already has.
-3. Discuss/explain the gap, explicitly connecting it to the notes that
-   referenced it (from Step 1, if that's where it came from) and to any
-   relevant `type: principle` notes already in the vault.
+3. Discuss/explain the gap by deriving it from first principles, not
+   reciting it. Before describing how the thing behaves, name the
+   fundamental constraint or problem that forces it to exist - something
+   that would still be true even if this specific technology didn't (e.g.
+   not "SQS has a visibility timeout" as a fact to learn, but "a consumer
+   can die silently and the queue has no way to know why - given only that,
+   what's the only way to allow a retry without losing the message or
+   blocking it forever?"). The actual mechanism should land as the
+   necessary answer to that constraint, not an arbitrary API detail to
+   memorise. Then explicitly connect it to the notes that referenced it
+   (from Step 1, if that's where it came from) and to any relevant
+   `type: principle` notes already in the vault.
 4. Explicitly ask: is there a more general principle this is an instance of,
    not just the specific fact/service/tool itself? Do this every time, not
    only when several existing notes already hint at the same pattern - the
@@ -88,7 +97,10 @@ only:
    question that requires actually using the concept (e.g. not "what is
    SQS again" but "Service B is down for an hour - what happens to messages
    sent to it via SQS vs a direct call, and why doesn't the sender see an
-   error"). After his answer, explicitly say whether it's correct,
+   error"), or - since step 3 derived the mechanism from a fundamental
+   constraint rather than reciting it - a "why does it have to work this
+   way" question that requires reproducing that derivation, not just
+   applying the end result. After his answer, explicitly say whether it's correct,
    incorrect, or partially correct - don't quietly move on if it's close
    enough. If it's wrong or incomplete, don't reveal the correct answer -
    ask a narrowing follow-up (an analogy, a smaller version of the same
