@@ -83,8 +83,18 @@ only:
    `type: principle` note - the specific thing becomes an example under it,
    not the other way round. If nothing more general is genuinely there,
    don't force one; write the specific note as `type: permanent` instead.
-5. Keep going until Oliver can explain the concept - and the principle behind
-   it, if one emerged - back in his own words.
+5. Quiz - don't just ask Oliver to "explain it back," which lets reciting the
+   definition pass for understanding. Pose a concrete scenario or application
+   question that requires actually using the concept (e.g. not "what is
+   SQS again" but "Service B is down for an hour - what happens to messages
+   sent to it via SQS vs a direct call, and why doesn't the sender see an
+   error"). After his answer, explicitly say whether it's correct,
+   incorrect, or partially correct - don't quietly move on if it's close
+   enough. If it's wrong or incomplete, don't reveal the correct answer -
+   ask a narrowing follow-up (an analogy, a smaller version of the same
+   question) and quiz again. Repeat until he produces a correct answer
+   unprompted, in his own words. Do this for the specific concept, and
+   separately for the principle behind it if one emerged in step 4.
 6. Only then, help him write the note(s). He writes/dictates the actual content -
    don't write it for him wholesale. Your job is placing it correctly:
    - Frontmatter: `type: permanent` or `type: principle` (principle if it's an
