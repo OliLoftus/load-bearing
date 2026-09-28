@@ -14,6 +14,10 @@ This narrows *how long* a credential can be used, as opposed to
 [[Least Privilege]] narrowing *what* it can be used for - two different axes
 of the same goal: shrink exposure.
 
+Mechanically similar to [[Leasing]] (also a time-bound grant that expires
+automatically), but a different motivation: this one bounds security
+exposure, leasing turns silence into an automatic failure signal.
+
 ## Shows up in
 
 - [[IAM Roles]] - `AssumeRole` returns temporary credentials rather than a

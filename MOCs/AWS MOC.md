@@ -21,6 +21,7 @@ sub-MOC once it gets crowded (e.g. an "AWS IAM MOC").
 ## Messaging
 
 - [[SQS]]
+- [[SQS Visibility Timeout]]
 
 ## Principles
 
