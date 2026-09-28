@@ -80,9 +80,16 @@ only:
    what's the only way to allow a retry without losing the message or
    blocking it forever?"). The actual mechanism should land as the
    necessary answer to that constraint, not an arbitrary API detail to
-   memorise. Then explicitly connect it to the notes that referenced it
-   (from Step 1, if that's where it came from) and to any relevant
-   `type: principle` notes already in the vault.
+   memorise. But don't force a derivation that isn't really there - some
+   things genuinely are just a platform-imposed limit or convention with no
+   deeper truth behind the specific value (CloudWatch's 86400s maximum
+   alarm period isn't "necessary" from any fundamental constraint, it's just
+   a chosen limit). If that's what it is, say so plainly instead of
+   manufacturing a fake-sounding justification - a false derivation teaches
+   something wrong dressed up as principled reasoning, which is worse than
+   just stating it's arbitrary. Then explicitly connect it to the notes that
+   referenced it (from Step 1, if that's where it came from) and to any
+   relevant `type: principle` notes already in the vault.
 4. Explicitly ask: is there a more general principle this is an instance of,
    not just the specific fact/service/tool itself? Do this every time, not
    only when several existing notes already hint at the same pattern - the
