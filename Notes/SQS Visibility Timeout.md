@@ -17,4 +17,7 @@ consumer crashed, hung, or was just too slow), the message becomes visible
 again - failure is assumed rather than requiring an explicit failure
 report, so it can be retried rather than block.
 
+This mechanism is what gives SQS [[At Least Once Delivery|at-least-once
+delivery]] rather than exactly-once.
+
 A specific instance of [[Leasing]].

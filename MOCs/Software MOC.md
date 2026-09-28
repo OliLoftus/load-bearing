@@ -19,3 +19,5 @@ enough to warrant their own page.
 - [[Metadata Separation]]
 - [[Asynchronous Communication]]
 - [[Leasing]]
+- [[At Least Once Delivery]]
+- [[Idempotency]]
