@@ -18,6 +18,10 @@ sub-MOC once it gets crowded (e.g. an "AWS IAM MOC").
 
 - [[Lambda Functions]]
 
+## Messaging
+
+- [[SQS]]
+
 ## Principles
 
 - [[Least Privilege]]
