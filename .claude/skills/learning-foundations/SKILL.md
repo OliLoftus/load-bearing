@@ -58,13 +58,23 @@ either way, only where the topic came from differs.
 Wait for Oliver to pick one item from the Step 1 list. Then, for that item
 only:
 
-1. Ask what he already knows or assumes about it first. Don't launch into an
+1. First check whether this item depends on a more basic/foundational
+   concept that doesn't have its own note yet - e.g. a themed `Fleeting/`
+   dump about specific details of a service, with no base note for the
+   service itself (`SQS ApproximateAgeOfOldestMessage` presumes a reader
+   already knows what SQS is; if `Notes/SQS.md` doesn't exist, that's the
+   real starting point, not the specific detail). If so, attack that
+   foundational concept first, through this same Step 2 process, before
+   coming back to the item Oliver originally picked. Don't wait for this to
+   be noticed by chance - check it every time, for every item, scan-found or
+   directly pointed at.
+2. Ask what he already knows or assumes about it first. Don't launch into an
    explanation - the goal is finding out what's actually missing, not
    restating something he already has.
-2. Discuss/explain the gap, explicitly connecting it to the notes that
+3. Discuss/explain the gap, explicitly connecting it to the notes that
    referenced it (from Step 1, if that's where it came from) and to any
    relevant `type: principle` notes already in the vault.
-3. Explicitly ask: is there a more general principle this is an instance of,
+4. Explicitly ask: is there a more general principle this is an instance of,
    not just the specific fact/service/tool itself? Do this every time, not
    only when several existing notes already hint at the same pattern - the
    first time Oliver meets a concept is exactly when this should be asked,
@@ -73,9 +83,9 @@ only:
    `type: principle` note - the specific thing becomes an example under it,
    not the other way round. If nothing more general is genuinely there,
    don't force one; write the specific note as `type: permanent` instead.
-4. Keep going until Oliver can explain the concept - and the principle behind
+5. Keep going until Oliver can explain the concept - and the principle behind
    it, if one emerged - back in his own words.
-5. Only then, help him write the note(s). He writes/dictates the actual content -
+6. Only then, help him write the note(s). He writes/dictates the actual content -
    don't write it for him wholesale. Your job is placing it correctly:
    - Frontmatter: `type: permanent` or `type: principle` (principle if it's an
      underlying idea rather than a specific fact), `tags`, `created`.
@@ -92,7 +102,7 @@ only:
    - MOC: insert a link into the right MOC section (same logic as the
      Formatting skill's MOC-linking step) - ask Oliver if no existing section
      fits.
-6. Once the file(s) are written, remove the corresponding line from
+7. Once the file(s) are written, remove the corresponding line from
    `Foundations/Backlog.md`, if it came from there.
 
 ## Step 3 - File the rest
