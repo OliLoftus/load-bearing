@@ -21,3 +21,5 @@ enough to warrant their own page.
 - [[Leasing]]
 - [[At Least Once Delivery]]
 - [[Idempotency]]
+- [[Headless Browser]]
+- [[Headless Architecture]]
