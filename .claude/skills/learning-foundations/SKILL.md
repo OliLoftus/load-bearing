@@ -75,7 +75,13 @@ only:
    this order - don't let them blur into one flowing explanation, or the
    what and why quietly get lost under mechanism detail:
    - **What**: a crisp, one- or two-sentence definition of the thing
-     itself, stated plainly before anything else.
+     itself, stated plainly before anything else. State the concrete
+     category it belongs to (a program, a protocol, a data structure, a
+     service) before describing its function - a role word like
+     "orchestrator" or "the thing that manages X" is still function
+     dressed as identity, not the category itself. Both matter, but they
+     answer different questions ("what kind of thing is this" vs "what
+     does it do"), and only the category actually answers the first one.
    - **Why**: the fundamental constraint or problem that forces it to
      exist, derived from first principles - something that would still be
      true even if this specific technology didn't (e.g. not "SQS has a
