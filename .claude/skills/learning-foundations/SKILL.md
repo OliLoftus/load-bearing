@@ -71,25 +71,34 @@ only:
 2. Ask what he already knows or assumes about it first. Don't launch into an
    explanation - the goal is finding out what's actually missing, not
    restating something he already has.
-3. Discuss/explain the gap by deriving it from first principles, not
-   reciting it. Before describing how the thing behaves, name the
-   fundamental constraint or problem that forces it to exist - something
-   that would still be true even if this specific technology didn't (e.g.
-   not "SQS has a visibility timeout" as a fact to learn, but "a consumer
-   can die silently and the queue has no way to know why - given only that,
-   what's the only way to allow a retry without losing the message or
-   blocking it forever?"). The actual mechanism should land as the
-   necessary answer to that constraint, not an arbitrary API detail to
-   memorise. But don't force a derivation that isn't really there - some
-   things genuinely are just a platform-imposed limit or convention with no
-   deeper truth behind the specific value (CloudWatch's 86400s maximum
-   alarm period isn't "necessary" from any fundamental constraint, it's just
-   a chosen limit). If that's what it is, say so plainly instead of
-   manufacturing a fake-sounding justification - a false derivation teaches
-   something wrong dressed up as principled reasoning, which is worse than
-   just stating it's arbitrary. Then explicitly connect it to the notes that
-   referenced it (from Step 1, if that's where it came from) and to any
-   relevant `type: principle` notes already in the vault.
+3. Discuss/explain the gap as three distinct, clearly separated things, in
+   this order - don't let them blur into one flowing explanation, or the
+   what and why quietly get lost under mechanism detail:
+   - **What**: a crisp, one- or two-sentence definition of the thing
+     itself, stated plainly before anything else.
+   - **Why**: the fundamental constraint or problem that forces it to
+     exist, derived from first principles - something that would still be
+     true even if this specific technology didn't (e.g. not "SQS has a
+     visibility timeout" as a fact to learn, but "a consumer can die
+     silently and the queue has no way to know why - given only that,
+     what's the only way to allow a retry without losing the message or
+     blocking it forever?"). The mechanism should land as the necessary
+     answer to that constraint, not an arbitrary detail to memorise. Don't
+     force a derivation that isn't really there, though - some things
+     genuinely are just a platform-imposed limit or convention with no
+     deeper truth behind the specific value (CloudWatch's 86400s maximum
+     alarm period isn't "necessary" from any constraint, it's just a chosen
+     limit). If that's what it is, say so plainly instead of manufacturing
+     a fake-sounding justification - a false derivation teaches something
+     wrong dressed up as principled reasoning, worse than just stating it's
+     arbitrary.
+   - **How**: the actual mechanism, edge cases, and gotchas - only after
+     what and why are both clearly on the table. This is where scenario
+     detail and quiz-worthy nuance belongs; it shouldn't be where the
+     definition and the reasoning are hiding.
+   Then explicitly connect it to the notes that referenced it (from Step 1,
+   if that's where it came from) and to any relevant `type: principle`
+   notes already in the vault.
 4. Explicitly ask: is there a more general principle this is an instance of,
    not just the specific fact/service/tool itself? Do this every time, not
    only when several existing notes already hint at the same pattern - the
