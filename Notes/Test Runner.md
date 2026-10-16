@@ -18,5 +18,5 @@ reliable answer from many independently-written pieces of test code -
 something has to sit above the test code doing discovery, execution,
 isolation, and reporting. That's the runner's job.
 
-For example: it launches a fresh, [[Isolation|isolated]] [[Headless
-Browser]] per test by default.
+For example: it launches a fresh, [[Isolation|isolated]]
+[[Headless Browser]] per test by default.
