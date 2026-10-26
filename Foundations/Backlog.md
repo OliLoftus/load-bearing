@@ -18,4 +18,9 @@ line here directly, any time, formal command not required.
 - [ ] Be liberal in what you accept from something you don't control - synthesised from SDD repo scan, SQS/DLQ captures
 - [ ] Use each tool only for what it's actually good at - synthesised from SDD repo scan, Dynatrace/PagerDuty captures
 - [ ] Structured, machine-parseable output over ad-hoc text - synthesised from SDD repo scan; likely the same idea as [[Metadata Separation]], to confirm
-
+- [ ] Server-side proof-of-possession check (hash the verifier, compare to the stored challenge) - from /socratic-visualizer on PKCE, see [[PKCE Flow]]
+- [ ] Front channel vs back channel (why the auth code travels through the exposed browser redirect) - from /socratic-visualizer on PKCE, see [[PKCE Flow]]
+- [ ] Registry as the distribution point (push and pull move images between machines) - from /socratic-visualizer on Container Image, see [[Container Image]]
+- [ ] Image vs container (image is the read-only template, run starts a container from it, Dockerfile only matters at build time) - from /socratic-visualizer on Container Image, see [[Container Image]]
+- [ ] Client authentication at the token endpoint (with no user, the client proves its own identity with its own credentials) - from /socratic-visualizer on Client Credentials Flow, see [[Client Credentials Flow]]
+- [ ] Resource server token validation (the resource server checks the token before serving anything) - from /socratic-visualizer on Client Credentials Flow, see [[Client Credentials Flow]]

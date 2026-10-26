@@ -25,3 +25,24 @@ An interceptor who steals only the authorization code never saw the
 verifier (only its hash was ever transmitted, and a hash can't be
 reversed), so they can't complete the exchange even with the stolen code in
 hand - proof of possession, not a shared secret.
+
+## Sequence
+
+```mermaid
+sequenceDiagram
+    participant C as Client app
+    participant B as Browser
+    participant A as Auth server
+    participant R as Resource API
+
+    Note over C: 1 keep code_verifier locally
+    C->>B: 2 authorize + code_challenge
+    B->>A: 2 forwards request
+    Note over B: 3 user logs in
+    A->>B: 4 auth code
+    B->>C: 4 redirect with code
+    C->>A: 5 code + code_verifier + redirect_uri
+    Note over A: 6 hash verifier, compare to stored challenge
+    A->>C: 7 access token
+    C->>R: 8 call API with token
+```
