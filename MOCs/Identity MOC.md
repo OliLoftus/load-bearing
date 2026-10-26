@@ -14,3 +14,4 @@ protocols that implement them.
 - [[OAuth]]
 - [[PKCE Flow]]
 - [[Client Credentials Flow]]
+- [[Client Authentication]]

@@ -24,7 +24,7 @@ server hashes it and checks it matches the stored challenge.
 An interceptor who steals only the authorization code never saw the
 verifier (only its hash was ever transmitted, and a hash can't be
 reversed), so they can't complete the exchange even with the stolen code in
-hand - proof of possession, not a shared secret.
+hand - [[Proof of Possession|proof of possession]], not a shared secret.
 
 ## Sequence
 

@@ -27,6 +27,7 @@ enough to warrant their own page.
 - [[Test Runner]]
 - [[Isolation]]
 - [[Tokenization]]
+- [[Proof of Possession]]
 
 ## Containers
 
