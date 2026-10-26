@@ -11,7 +11,8 @@ involved. The client is the principal, acting on its own behalf rather than
 a person's, so there is no login page, no consent step, no redirect and no
 authorization code. It authenticates itself directly to the authorization
 server ([[Client Authentication]]) and gets an access token back in a single
-request.
+request. The resource server then checks the token
+([[Resource Server Token Validation]]) before serving anything.
 
 It exists because with no resource owner to delegate anything, the client's
 own credentials are the whole basis for trust. That only works for

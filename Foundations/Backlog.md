@@ -22,4 +22,3 @@ line here directly, any time, formal command not required.
 - [ ] Front channel vs back channel (why the auth code travels through the exposed browser redirect) - from /socratic-visualizer on PKCE, see [[PKCE Flow]]
 - [ ] Registry as the distribution point (push and pull move images between machines) - from /socratic-visualizer on Container Image, see [[Container Image]]
 - [ ] Image vs container (image is the read-only template, run starts a container from it, Dockerfile only matters at build time) - from /socratic-visualizer on Container Image, see [[Container Image]]
-- [ ] Resource server token validation (the resource server checks the token before serving anything) - from /socratic-visualizer on Client Credentials Flow, see [[Client Credentials Flow]]

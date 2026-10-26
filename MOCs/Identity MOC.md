@@ -15,3 +15,4 @@ protocols that implement them.
 - [[PKCE Flow]]
 - [[Client Credentials Flow]]
 - [[Client Authentication]]
+- [[Resource Server Token Validation]]

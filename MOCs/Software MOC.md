@@ -28,6 +28,7 @@ enough to warrant their own page.
 - [[Isolation]]
 - [[Tokenization]]
 - [[Proof of Possession]]
+- [[Verify at the Point of Use]]
 
 ## Containers
 
