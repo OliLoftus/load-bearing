@@ -32,4 +32,4 @@ sequenceDiagram
 ```
 
 Source: general Docker knowledge, no verified vault or doc source. See also
-[[Containerisation]] and the raw question in [[image]].
+[[Containerisation]].
